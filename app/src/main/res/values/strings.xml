@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ProducerConsumer</string>
+    <string name="add_producer">Add producer</string>
+    <string name="add_consumer">Add consumer</string>
+</resources>
