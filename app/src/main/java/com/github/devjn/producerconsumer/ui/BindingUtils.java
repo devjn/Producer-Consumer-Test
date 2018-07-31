@@ -15,8 +15,7 @@ public class BindingUtils {
 
     @BindingAdapter("badgeCount")
     public static void setBadgeCount(TextView view, int count) {
-        final BadgeDrawable badgeDrawable =
-                new BadgeDrawable.Builder()
+        final BadgeDrawable badgeDrawable = new BadgeDrawable.Builder()
                         .type(BadgeDrawable.TYPE_NUMBER)
                         .number(count)
                         .build();

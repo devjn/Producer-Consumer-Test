@@ -15,9 +15,9 @@ public class MainViewModel extends ViewModel {
     public final ObservableList<Consumer> consumers = new ObservableArrayList<>();
 
     public MainViewModel() {
-        data.add("Hello");
-        data.add("Pressing 'Add producer' starts adding text to list");
-        data.add("Pressing 'Add consumer' starts removing text to list");
+        data.add("Hello!");
+        data.add("Pressing 'Add producer' adds producer which inserts new text to the list every 3 seconds");
+        data.add("Pressing 'Add consumer' adds consumer which removes text from the list every 4 seconds");
     }
 
     public ObservableList<String> getData() {

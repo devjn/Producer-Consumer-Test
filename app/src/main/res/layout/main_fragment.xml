@@ -5,10 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
-
-        <variable
-            name="viewModel"
-            type="com.github.devjn.producerconsumer.ui.view.MainViewModel"/>
+        <variable name="viewModel" type="com.github.devjn.producerconsumer.ui.view.MainViewModel"/>
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -40,7 +37,6 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
-
 
             <Button
                 style="?attr/buttonBarButtonStyle"

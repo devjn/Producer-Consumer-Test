@@ -1,7 +1,5 @@
 package com.github.devjn.producerconsumer.data;
 
-import android.os.Handler;
-
 import java.util.List;
 
 /**
@@ -9,18 +7,22 @@ import java.util.List;
  * devjn@jn-arts.com
  * Producer
  */
-public class Producer {
+public class Producer extends BaseWorker<String> {
 
-    private final Handler handler = new Handler();
-    private final int delay = 3000; //milliseconds
+    private static final int delay = 3000; //milliseconds
 
-    public Producer(final List<String> list) {
-        handler.postDelayed(new Runnable() {
-            public void run() {
-                list.add("List item " + list.size());
-                handler.postDelayed(this, delay);
-            }
-        }, delay);
+    public Producer(List<String> list) {
+        super(list);
+    }
+
+    @Override
+    void onRun(List<String> list) {
+        list.add("List item " + list.size());
+    }
+
+    @Override
+    int getDelay() {
+        return delay;
     }
 
 }
